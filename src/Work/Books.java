@@ -1,25 +1,54 @@
 package Work;
 
+/**
+ * Class to privide a simple Book
+ * @author Maximilian
+ *
+ */
 public class Books {
 	private String author;
 	private String title;
 	private String isbn;
 	private String isbn_10;
+	/**
+	 * Gets a String with the name/s of the author
+	 * @return {@link String} Author
+	 */
 	public String getAuthor() {
 		return author;
 	}
+	/**
+	 * Set to the current Books the Autho
+	 * @param author authorname
+	 */
 	public void setAuthor(String author) {
 		this.author = author;
 	}
+	/**
+	 * Get the Current-Title of the Book
+	 * @return
+	 */
 	public String getTitle() {
 		return title;
 	}
+	/**
+	 * Set the Tilte of the books
+	 * @param title
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
+	/**
+	 * Get the isbn of the book
+	 * @return
+	 */
 	public String getIsbn() {
 		return isbn;
 	}
+	/**
+	 * Set the isbn-code of the book
+	 * @param isbn
+	 */
 	public void setIsbn(String isbn) {
 		this.isbn = isbn;
 	}
@@ -37,10 +66,10 @@ public class Books {
 		this.isbn_10 = isbn_10;
 	}
 	public Books(String title){
-		
+		this(null,title,null,null);
 	}
 	public Books(String author, String title){
-		
+		this(author,title,null,null);
 	}
 	@Override
 	public int hashCode() {
